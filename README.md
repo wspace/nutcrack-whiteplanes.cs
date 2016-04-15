@@ -1,4 +1,6 @@
 # Whiteplanes
+[![Build status](https://ci.appveyor.com/api/projects/status/w4dstlnwru09f1a9/branch/master?svg=true)](https://ci.appveyor.com/project/nutcrack/whiteplanes-cs/branch/master)
+[![Coverage Status](https://coveralls.io/repos/github/whiteplanes/whiteplanes.cs/badge.svg?branch=master)](https://coveralls.io/github/whiteplanes/whiteplanes.cs?branch=master)
 
 Whiteplane is a whitespace interpreter writen in C#.
 
