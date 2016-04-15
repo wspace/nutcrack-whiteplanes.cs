@@ -9,10 +9,10 @@
     <projectUrl>https://github.com/whiteplanes/whiteplanes.cs</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Whitespace interpreter</description>
-    <copyright>Copyright 2016</copyright>
+    <copyright>Copyright © 2016 Whiteplanes</copyright>
     <tags>whitespace</tags>
   </metadata>
   <files>
-      <file src="Whiteplanes\bin\Release\" target="lib\net46" />
+      <file src="Whiteplanes\bin\Release\whiteplanes.dll" target="lib\net46" />
   </files>
 </package>
