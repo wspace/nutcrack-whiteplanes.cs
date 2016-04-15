@@ -1,0 +1,14 @@
+version: 1.0.0.{build}
+configuration: Debug
+cache:
+  - packages
+nuget:
+  disable_publish_on_pr: true
+install:
+  - nuget restore
+build:
+  project: Whiteplanes.sln
+  verbosity: normal
+after_test:
+  - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[Whiteplanes]*" -target:vstest.console.exe -targetargs:".\Whiteplanes.Test\bin\Debug\Whiteplanes.Test.dll" -output:coverage.xml -returntargetcode
+  - .\packages\coveralls.io.1.3.4\tools\coveralls.net.exe --opencover "coverage.xml"

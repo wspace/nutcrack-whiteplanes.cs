@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>whiteplanes</id>
+    <version>1.0.0</version>
+    <authors>Takuya Katsurada</authors>
+    <owners>Takuya Katsurada</owners>
+    <licenseUrl>https://github.com/whiteplanes/whiteplanes.cs/README.md</licenseUrl>
+    <projectUrl>https://github.com/whiteplanes/whiteplanes.cs</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Whitespace interpreter</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>whitespace</tags>
+  </metadata>
+  <files>
+      <file src="Whiteplanes\bin\Release\" target="lib\net46" />
+  </files>
+</package>
