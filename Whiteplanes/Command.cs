@@ -17,7 +17,7 @@
         /// <summary>
         /// Run the command.
         /// </summary>
-        /// <param name="machine">Execution context.</param>
+        /// <param name="context">Execution context.</param>
         public abstract void Process(IContextable context);
     }
 }
