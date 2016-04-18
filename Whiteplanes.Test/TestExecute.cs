@@ -6,7 +6,7 @@ namespace Whiteplanes.Test
 {
     
     [TestClass]
-    public class TestWhiteplanes
+    public class TestExecute
     {
         /// <summary>
         /// 

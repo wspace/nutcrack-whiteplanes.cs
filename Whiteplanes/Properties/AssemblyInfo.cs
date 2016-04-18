@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Whiteplanes")]
@@ -9,3 +10,4 @@ using System.Runtime.InteropServices;
 [assembly: Guid("6d4fe6a3-150d-4080-8659-e5e881458956")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: InternalsVisibleTo("Whiteplanes.Test")]
