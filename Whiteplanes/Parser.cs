@@ -96,7 +96,7 @@ namespace Whiteplanes
                     case Symbol.Tab:
                         if (!MoveToNextToken())
                         {
-                            
+                            throw new SyntaxException("Invalid InstructionModificationParameter");
                         }
                         var next = (char) _reader.Read();
                         switch (next)
