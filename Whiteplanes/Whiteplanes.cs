@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -7,7 +8,7 @@ namespace Whiteplanes
     /// <summary>
     /// 
     /// </summary>
-    public class Whiteplanes
+    public class Whiteplanes : IEquatable<Whiteplanes>
     {
         /// <summary>
         /// 
@@ -71,6 +72,22 @@ namespace Whiteplanes
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public bool Equals(Whiteplanes other)
+        {
+            if (_commands.Count != other._commands.Count)
+            {
+                return false;
+            }
+
+            return !(from index in Enumerable.Range(0, _commands.Count)
+                     select _commands[index].Equals(other._commands[index])).ToList().Contains(false);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="context"></param>
         public void Run(IContextable context)
         {
@@ -112,6 +129,6 @@ namespace Whiteplanes
                 context.ProgramCounter += 1;
             }
             
-        } 
+        }
     }
 }

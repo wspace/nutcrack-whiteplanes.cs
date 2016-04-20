@@ -23,5 +23,21 @@
             }
             context.Stack.Push(slideValue);
         }
+
+        /// <summary>
+        /// Determines whether the specified object is equal to the current object.
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        protected override bool Is(Command other)
+        {
+            if (base.Is(other))
+            {
+                var command = other as Slide;
+                return Value == command.Value;
+
+            }
+            return false;
+        }
     }
 }

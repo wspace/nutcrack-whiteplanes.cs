@@ -20,5 +20,21 @@
         /// </summary>
         /// <param name="context">Execution context.</param>
         public override void Process(IContextable context) => context.Labels.Add(Name, Location);
+
+        /// <summary>
+        /// Determines whether the specified object is equal to the current object.
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        protected override bool Is(Command other)
+        {
+            if (base.Is(other))
+            {
+                var command = other as Register;
+                return (Name == command.Name) && (Location == command.Location);
+
+            }
+            return false;
+        }
     }
 }
